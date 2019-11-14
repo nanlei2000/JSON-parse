@@ -1,5 +1,5 @@
 /** 复制于:https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON */
-function stringify(value: any): any {
+export function stringify(value: any): any {
     const toString = Object.prototype.toString;
     const isArray = Array.isArray
         || function (a) { return toString.call(a) === '[object Array]'; };
@@ -50,11 +50,11 @@ function stringify(value: any): any {
     return _stringify(value)
 }
 
-console.log(stringify({
-    a: 0.1,
-    b: false,
-    c: true,
-    d: null,
-    e: 'hello',
-    f: [123456789876543210n, 2, { a: 1, b: false, c: true, d: null, e: '你好' }],
-}))
+// console.log(stringify({
+//     a: 0.1,
+//     b: false,
+//     c: true,
+//     d: null,
+//     e: 'hello',
+//     f: [123456789876543210n, 2, { a: 1, b: false, c: true, d: null, e: '你好' }],
+// }))
